@@ -4,18 +4,19 @@ ba hamgiin baga elementiig oloh*/
 using namespace std;
 int main()
 {
-	int num,max,min;
-	int arr[num];
-	cout<<"Enter size of the array:";
-	cin>>num;
-	cout<<"Enter elements in the array:"<<endl;;
-	for(int i=0;i<num;i++)
+	int size;
+	int arr[size];
+	cout<<"Enter the size:";
+	cin>>size;
+	cout<<"Enter the number of array:";
+	int max=arr[0];
+	int min=arr[0];
+	for(int i=0;i<size;i++)
 	{
 		cin>>arr[i];
 	}
-	max=arr[0];
-	min=arr[0];
-	for(int i=0;i<num;i++)
+
+	for(int i=0;i<=size;i++)
 	{
 		if(arr[i]>max)
 		{
@@ -25,8 +26,10 @@ int main()
 		{
 			min=arr[i];
 		}
+	
 	}
-	cout<<"Maximum element="<<max<<endl;
-	cout<<"Minimum element="<<min;
-	return 0;
+		cout<<"Maximum number of array: "<<max<<endl;
+		cout<<"Minimum number of array: "<<min;	
+
+	return 0;	
 }
